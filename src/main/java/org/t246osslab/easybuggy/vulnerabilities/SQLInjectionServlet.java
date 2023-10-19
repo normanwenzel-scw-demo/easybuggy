@@ -63,7 +63,7 @@ public class SQLInjectionServlet extends AbstractServlet {
         Statement stmt = null;
         ResultSet rs = null;
         String result = getErrMsg("msg.error.user.not.exist", req.getLocale());
-        try {
+      /*  try {
             conn = DBClient.getConnection();
             stmt = conn.createStatement();
             rs = stmt.executeQuery("SELECT name, secret FROM users WHERE ispublic = 'true' AND name='" + name
@@ -83,7 +83,7 @@ public class SQLInjectionServlet extends AbstractServlet {
             Closer.close(rs);
             Closer.close(stmt);
             Closer.close(conn);
-        }
+        }*/
         return result;
     }
     
