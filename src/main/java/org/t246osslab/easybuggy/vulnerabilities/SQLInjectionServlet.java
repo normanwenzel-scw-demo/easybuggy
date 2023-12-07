@@ -39,7 +39,7 @@ public class SQLInjectionServlet extends AbstractServlet {
             bodyHtml.append("<input type=\"password\" name=\"password\" size=\"20\" maxlength=\"20\" autocomplete=\"off\">");
             bodyHtml.append("<br><br>");
             bodyHtml.append("<input type=\"submit\" value=\"" + getMsg("label.submit", locale) + "\">");
-            bodyHtml.append("<br><br><br>");
+            bodyHtml.append("<br><br>");
 
             if (!StringUtils.isBlank(name) && !StringUtils.isBlank(password) && password.length() >= 8) {
                 bodyHtml.append(selectUsers(name, password, req));
