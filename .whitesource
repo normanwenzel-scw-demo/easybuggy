@@ -13,6 +13,10 @@
     "baseBranches": ["master"],
     "snippetSize": 10
   },
+"issueSettingsSAST": {
+"issueType": "finding",
+"minSeverityLevel": "high"
+},
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
