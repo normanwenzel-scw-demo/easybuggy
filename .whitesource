@@ -14,7 +14,7 @@
     "snippetSize": 10
   },
 "issueSettingsSAST": {
-"issueType": "finding",
+"issueType": "repo",
 "minSeverityLevel": "high"
 },
   "checkRunSettings": {
