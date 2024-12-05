@@ -6,6 +6,7 @@
     "projectToken": "",
     "baseBranches": []
   },
+
   "scanSettingsSAST": {
     "enableScan": true,
     "enableRemediation": true,
