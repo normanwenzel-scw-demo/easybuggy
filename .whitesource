@@ -19,6 +19,7 @@
 "issueType": "finding",
 "minSeverityLevel": "high"
 },
+
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
