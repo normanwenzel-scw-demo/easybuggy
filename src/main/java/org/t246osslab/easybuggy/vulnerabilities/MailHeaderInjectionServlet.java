@@ -1,5 +1,6 @@
 package org.t246osslab.easybuggy.vulnerabilities;
 
+import java.nio.file.Paths;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -130,7 +131,13 @@ public class MailHeaderInjectionServlet extends AbstractServlet {
                         continue;
                     }
 
-                    File saveFile = new File(fileName);
+                      String basePath = "/your/base/directory"; // Replace with your base directory
+                      File saveFile = new File(basePath, fileName);
+                      String canonicalBasePath = new File(basePath).getCanonicalPath();
+                      String canonicalSavePath = saveFile.getCanonicalPath();
+                      if (!canonicalSavePath.startsWith(canonicalBasePath)) {
+                          throw new IOException("Invalid file path");
+                      }
                     log.debug("Uploaded file is saved on: " + saveFile.getAbsolutePath());
                     FileOutputStream outputStream = null;
                     InputStream inputStream = null;
