@@ -1,9 +1,5 @@
---- original
-+++ remediated
-@@ -0,0 +0,0 @@
  package org.t246osslab.easybuggy.vulnerabilities;
  
-@@ -3,0 +3,1 @@
 +import java.nio.file.Paths;
  import java.io.File;
  import java.io.FileOutputStream;
@@ -135,7 +131,6 @@
                          continue;
                      }
  
-@@ -133,1 +134,7 @@
 -                    File saveFile = new File(fileName);
 +                      String basePath = "/your/base/directory"; // Replace with your base directory
 +                      File saveFile = new File(basePath, fileName);
