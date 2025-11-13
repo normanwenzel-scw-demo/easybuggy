@@ -14,6 +14,7 @@
     "scanPullRequests": true,
     "incrementalScan": true,
     "baseBranches": ["master"],
+    "findingSuppressions": "requireApproval",
     "snippetSize": 10
   },
 "issueSettingsSAST": {
