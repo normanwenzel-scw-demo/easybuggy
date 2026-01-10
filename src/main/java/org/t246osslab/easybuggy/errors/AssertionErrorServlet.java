@@ -15,7 +15,7 @@ public class AssertionErrorServlet extends AbstractServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        assert 1 >= 2 : "Invalid!";
+        assert 1 >= 2 : "Invalid 2!";
     }
 }
 
