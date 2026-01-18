@@ -66,7 +66,7 @@ public class SQLInjectionServlet extends AbstractServlet {
         try {
             conn = DBClient.getConnection();
             stmt = conn.createStatement();
-            rs = stmt.executeQuery("SELECT name, secret FROM users WHERE ispublic = 'true' AND name='" + name
+            rs = stmt.executeQuery("SELECT name, secret FROM users WHERE ispublic = 'true' AND name='" + name // Changed Signature
                     + "' AND password='" + password + "'");
             StringBuilder sb = new StringBuilder();
             while (rs.next()) {
