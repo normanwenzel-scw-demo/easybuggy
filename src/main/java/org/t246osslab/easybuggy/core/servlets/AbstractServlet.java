@@ -92,6 +92,10 @@ public abstract class AbstractServlet extends HttpServlet {
             writer.write("</table>");
             writer.write("<hr style=\"margin-top:0px\">");
             writer.write(htmlBody);
+
+
+
+            writer.write(htmlBody); // Repeated to get a new finding
             writer.write("</BODY>");
             writer.write("</HTML>");
 
